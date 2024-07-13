@@ -10,11 +10,10 @@ public class Bin_Go {
             if (i % 5 == 0) {
                 resultado += "Go";
             }
-            if (resultado.isEmpty()) {
-                System.out.println(i);
-            } else {
-                System.out.println(resultado);
+            if(i % 3 != 0 && i % 5 != 0) {
+                resultado = "";
             }
+            System.out.println(i + " / " + resultado);
         }
     }
 }
